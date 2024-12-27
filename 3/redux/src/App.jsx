@@ -26,7 +26,7 @@ function App() {
       이메일: <input type='text' value={email} onChange={(e)=>setEmail(e.target.value)} />
     </div>
     <button onClick={setHandler}>저장</button>
-    <button onClick={dispatch(clearUser())}>초기화</button>
+    <button onClick={()=>dispatch(clearUser())}>초기화</button>
 
     <h3>{user.name}</h3>
     <h3>{user.email}</h3>
